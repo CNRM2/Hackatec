@@ -1,0 +1,107 @@
+﻿@page "/Calentador-solar"
+
+<div class="form-container">
+    <header>
+        <h1>Calentador de agua solar</h1>
+        <p>Ahorra energía con un calentador de agua solar. Registra la compra e instalación del tuyo.</p>
+    </header>
+    <form>
+        <label for="fecha">Fecha</label>
+        <input type="date" id="fecha" />
+
+        <label for="capacidad">Capacidad</label>
+        <input type="text" id="capacidad" placeholder="Litros" />
+
+        <label for="costo">Costo</label>
+        <input type="text" id="costo" placeholder="MXN" />
+
+        <button class="btn-primary">Guardar</button>
+    </form>
+</div>
+
+<style>
+    /* Estilos generales */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f7f7f7;
+        color: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        padding: 20px;
+    }
+
+    .form-container {
+        background-color: #fff;
+        border-radius: 8px;
+        padding: 30px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 500px;
+    }
+
+    header {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+        color: #2e8b57;
+    }
+
+    header p {
+        font-size: 1rem;
+        color: #555;
+    }
+
+    /* Estilo de los campos del formulario */
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    label {
+        font-size: 1rem;
+        color: #333;
+    }
+
+    input {
+        padding: 10px;
+        font-size: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        outline: none;
+    }
+
+    input:focus {
+        border-color: #2e8b57;
+        box-shadow: 0 0 5px rgba(46, 139, 87, 0.3);
+    }
+
+    /* Botón */
+    .btn-primary {
+        padding: 12px 20px;
+        font-size: 1rem;
+        background-color: #2e8b57;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .btn-primary:hover {
+        background-color: #3cb371;
+    }
+
+</style>
+
